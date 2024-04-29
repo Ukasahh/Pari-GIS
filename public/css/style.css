@@ -1,0 +1,6 @@
+.btn-custom {
+    width: 50px; /* Tentukan lebar tombol dalam piksel */
+    height: 20px; /* Tentukan tinggi tombol dalam piksel */
+    min-width: 70px; /* Ukuran minimum lebar tombol */
+    min-height: 40px; /* Ukuran minimum tinggi tombol */
+}
