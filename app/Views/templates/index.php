@@ -10,10 +10,12 @@
     <meta name="author" content="">
 
     <title><?= $title; ?></title>
-
     <!-- Custom fonts for this template-->
     <link href="<?= base_url("vendor/fontawesome-free/css/all.min.css"); ?>" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Table Map/Management CSS -->
+    <link href="<?= base_url(); ?>css/dataTables.dataTables.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url(); ?>css/sb-admin-2.min.css" rel="stylesheet">
@@ -54,7 +56,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website <?= date('Y'); ?></span>
+                        <span>Copyright &copy; PariGIS <?= date('Y'); ?></span>
                     </div>
                 </div>
             </footer>
@@ -76,15 +78,15 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Siap meninggalkan Pari-GIS?</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Pilih 'Logout' di bawah ini jika Anda ingin mengakhiri penjelajahan bersama Pari-GIS.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="<?= base_url('logout'); ?>">Logout</a>
+                    <a class="btn btn-info" href="<?= base_url('logout'); ?>">Logout</a>
                 </div>
             </div>
         </div>
@@ -99,6 +101,19 @@
 
     <!-- Custom scripts for all pages-->
     <script src="<?= base_url(); ?>js/sb-admin-2.min.js"></script>
+
+    <!-- Table Map/Management JS -->
+    <script src="<?= base_url(); ?>js/dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            new DataTable('#table2', {
+                search: {
+                    return: true
+                }
+            });
+        });
+    </script>
     <?= $this->renderSection('script') ?>
 
 </body>

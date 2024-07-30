@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "datatables.net-dt": "^2.0.8",
     "leaflet": "^1.9.4"
   }
 }

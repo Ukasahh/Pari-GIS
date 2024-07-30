@@ -5,10 +5,11 @@
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800">User List</h1>
+    <h1 class="h3 mb-4 text-gray-800"><i class="fas fa-address-book"></i> User List</h1>
+    <hr>
     <div class="row">
         <div class="col-lg-8">
-            <table class="table caption-top">
+            <table id="table2" class="display">
                 <caption>List of users</caption>
                 <thead>
                     <tr>

@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\M_wisata;
+
 class Home extends BaseController
 {
     public function index()
@@ -16,5 +18,10 @@ class Home extends BaseController
     {
         $data['title'] = 'User List';
         return view('user/index', $data);
+    }
+    public function home()
+    {
+        $data['title'] = 'Home';
+        return view('home/index', $data);
     }
 }

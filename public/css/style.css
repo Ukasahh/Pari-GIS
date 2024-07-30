@@ -4,3 +4,12 @@
     min-width: 70px; /* Ukuran minimum lebar tombol */
     min-height: 40px; /* Ukuran minimum tinggi tombol */
 }
+
+.bg-auth {
+    background: linear-gradient(to bottom, rgba(0, 0, 255, 0.5), rgba(0, 0, 204, 0.5)), url('https://asset-2.tstatic.net/wartakota/foto/bank/images/Pulau-Pari-menjadi-salah-satu-destinasi-wisata-di-Kabupaten-Kepulauan-Seribu.jpg');
+    background-size: cover;
+    background-blend-mode: overlay;
+    width: 300px;
+    height: 185px;
+    display: block;
+}

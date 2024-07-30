@@ -5,7 +5,7 @@
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800">User Detail</h1>
+    <h1 class="h3 mb-4 text-gray-800"><i class="far fa-address-book"></i> User Detail</h1>
     <div class="row">
         <div class="col-lg-8">
             <div class="card mb-3" style="max-width: 540px;">

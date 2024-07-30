@@ -15,8 +15,9 @@
                     <div class="row">
                         <div class="col-lg">
                             <div class="p-5">
-                                <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-4"><?= lang('Auth.loginTitle') ?></h1>
+                                <div class="text-left">
+                                    <h1 class="h4 text-gray-900 mb-0">Ayo jelajahi Pari-GIS!</h1>
+                                    <h1 class="h4 text-gray-900 mb-3"><?= lang('Auth.loginTitle') ?> untuk melanjutkan.</h1>
                                 </div>
 
                                 <?= view('Myth\Auth\Views\_message_block') ?>
@@ -54,7 +55,7 @@
                                     <?php endif; ?>
 
 
-                                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                                    <button type="submit" class="btn btn-info btn-user btn-block">
                                         <?= lang('Auth.loginAction') ?>
                                     </button>
                                 </form>
@@ -68,7 +69,7 @@
 
                                 <?php if ($config->allowRegistration) : ?>
                                     <div class="text-center">
-                                        <a class="small" href="<?= url_to('register') ?>"><?= lang('Auth.needAnAccount') ?></a>
+                                        <a class="small text-info" href="<?= url_to('register') ?>"><?= lang('Auth.needAnAccount') ?></a>
                                     </div>
                                 <?php endif; ?>
                             </div>

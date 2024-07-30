@@ -15,7 +15,7 @@
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800 text-center">SPOT WISATA PULAU PRAMUKA</h1>
+    <h1 class="h3 mb-4 text-gray-800 text-center">SPOT WISATA PULAU PARI</h1>
 
 
     <div class="row">
@@ -26,8 +26,8 @@
     <?= $this->Section('script') ?>
     <script>
         var map = L.map('maps').setView({
-            lat: -5.745045251806205,
-            lon: 106.61385372421687,
+            lat: -5.8576131,
+            lon: 106.618888,
         }, 17)
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -49,7 +49,7 @@
         L.marker({
             lat: -5.743636789670826,
             lon: 106.61530959164638
-        }).bindPopup('<h5>Rumah Literasi Hijau</h5> </br> Pulau Pramuka memiliki Rumah Literasi Hijau.').addTo(map);
+        }).bindPopup('<h5>Rumah Literasi Hijau2</h5> </br> Pulau Pramuka memiliki Rumah Literasi Hijau.').addTo(map);
 
         L.marker({
             lat: -5.746640818665916,
@@ -63,12 +63,12 @@
         }).bindPopup('<h5>Spot Penangkaran Penyu</h5> </br> Pulau Pramuka memiliki penangkaran penyu sisik sebagai daya tarik agar wisatawan datang berkunjung. Wisatawan yang berkunjung dapat melihat bahkan menyentuh penyu sisik saat berada di dalam penangkaran.').addTo(map);
 
 
-        var polygon = L.polygon([
-            [-5.746576240133363, 106.61513906204836],
-            [-5.746787187858079, 106.6153194988392],
-            [-5.7473033362048165, 106.6150398218122],
-            [-5.747277866863697, 106.6147949884494]
-        ]).bindPopup('<h5>Hog Dive</h5> </br> Homestay Dolphin merupakan penginapan asri yang berada di Pulau Pramuka. Akomodasi ini dilengkapi dengan beberapa fasilitas dan layanan yang pastinya menambah kenyamananmu saat menginap.').addTo(map);
+        // var polygon = L.polygon([
+        //     [-5.746576240133363, 106.61513906204836],
+        //     [-5.746787187858079, 106.6153194988392],
+        //     [-5.7473033362048165, 106.6150398218122],
+        //     [-5.747277866863697, 106.6147949884494]
+        // ]).bindPopup('<h5>Hog Dive</h5> </br> Homestay Dolphin merupakan penginapan asri yang berada di Pulau Pramuka. Akomodasi ini dilengkapi dengan beberapa fasilitas dan layanan yang pastinya menambah kenyamananmu saat menginap.').addTo(map);
     </script>
     <?= $this->endSection(); ?>
 
